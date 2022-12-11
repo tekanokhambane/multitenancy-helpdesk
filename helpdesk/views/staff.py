@@ -379,7 +379,7 @@ def view_ticket(request, ticket_id):
 
     if helpdesk_settings.HELPDESK_STAFF_ONLY_TICKET_OWNERS:
         users = User.objects.filter(
-            is_active=True, is_staff=True).order_by(User.USERNAME_FIELD)
+            is_active=True).filter(usertenantpermissions__is_staff=True).order_by(User.USERNAME_FIELD)
     else:
         users = User.objects.filter(
             is_active=True).order_by(User.USERNAME_FIELD)
@@ -1320,7 +1320,7 @@ def ticket_list(request):
     return render(request, 'helpdesk/ticket_list.html', dict(
         context,
         default_tickets_per_page=request.user.usersettings_helpdesk.tickets_per_page,
-        user_choices=User.objects.filter(is_active=True, is_staff=True),
+        user_choices=User.objects.filter(is_active=True).filter(usertenantpermissions__is_staff=True),
         kb_items=kbitem,
         queue_choices=huser.get_queues(),
         status_choices=Ticket.STATUS_CHOICES,
