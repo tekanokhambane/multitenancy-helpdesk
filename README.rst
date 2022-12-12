@@ -6,15 +6,8 @@ multitenancy-helpdesk - A Django powered ticket tracker for django-multitenancy.
 .. .. image:: https://codecov.io/gh/django-helpdesk/django-helpdesk/branch/develop/graph/badge.svg
 ..   :target: https://codecov.io/gh/django-helpdesk/django-helpdesk
 
-Copyright 2009-2022 Ross Poulton and django-helpdesk contributors. All Rights Reserved.
-See LICENSE for details.
-
-django-helpdesk was formerly known as Jutda Helpdesk, named after the
-company which originally created it. As of January 2011 the name has been
-changed to reflect what it really is: a Django-powered ticket tracker with
-contributors reaching far beyond Jutda.
-
-Complete documentation is available in the docs/ directory,
+multitenancy-helpdesk is a fork form https://github.com/django-helpdesk/django-helpdesk , which is integrated with django-multitenancy for ticket management and customer support. This is not an alternative to https://github.com/django-helpdesk/django-helpdesk but a modified version to work with django-multitenancy.
+You can check the complete documentation of django-helpdesk in the docs/ directory,
 or online at http://django-helpdesk.readthedocs.org/.
 
 Demo Quickstart
