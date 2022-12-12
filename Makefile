@@ -12,7 +12,7 @@ TOX = tox
 #: help - Display callable targets.
 .PHONY: help
 help:
-	@echo "django-helpdesk make shortcuts"
+	@echo "multitenancy-helpdesk make shortcuts"
 	@echo "Here are available targets:"
 	@egrep -o "^#: (.+)" [Mm]akefile  | sed 's/#: /* /'
 

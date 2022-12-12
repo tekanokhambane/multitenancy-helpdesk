@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 import sys
 
 
-version = '0.1.0b1'
+version = '0.1.0b4'
 
 
 # Provided as an attribute, so you can append to these instead
@@ -15,6 +15,7 @@ standard_exclude = ("*.py", "*.pyc", "*$py.class", "*~", ".*", "*.bak")
 standard_exclude_directories = (
     ".*",
     "CVS",
+    "./env",
     "_darcs",
     "./build",
     "./dist",

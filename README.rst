@@ -1,5 +1,5 @@
 multitenancy-helpdesk - A Django powered ticket tracker for django-multitenancy.
-=========================================================================
+=================================================================================
 
 .. [![Build Status](https://dev.azure.com/django-helpdesk/django-helpdesk/_apis/build/status/django-helpdesk.django-helpdesk?branchName=master)](https://dev.azure.com/django-helpdesk/django-helpdesk/_build/latest?definitionId=1&branchName=master)
 
