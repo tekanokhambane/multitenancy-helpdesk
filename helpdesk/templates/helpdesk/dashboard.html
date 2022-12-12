@@ -1,26 +1,29 @@
-{% extends "helpdesk/base.html" %}{% load i18n %}
+{% extends "multitenancy/admin/base.html" %}{% load i18n %}
+{%block custom_css%}
 
-{% block helpdesk_title %}{% trans "Helpdesk Dashboard" %}{% endblock %}
+{%endblock%}
+{% block page_title %}{% trans "Helpdesk Dashboard" %}{% endblock %}
 
-{% block helpdesk_breadcrumb %}
-<li class="breadcrumb-item">
-    <a href="#">Dashboard</a>
-</li>
+{% block breadcrumbs %}
+
 <li class="breadcrumb-item active">{% trans "Overview" %}</li>
 {% endblock %}
 
-{% block helpdesk_body %}
 
-<div class="row">
-    <div class="col-sm-8">
-    {% include 'helpdesk/include/stats.html' %}
-    </div>
-    <div class="col-sm-4">
-        <div class="alert alert-warning">
-            <p>{% trans "Welcome to your Helpdesk Dashboard! From here you can quickly see tickets submitted by you, tickets you are working on, and those tickets that have no owner." %}</p>
+{% block main_content %}
+<!-- Main content -->
+<section class="content" >
+    <div class="container text-dark" style="height: 800px;">
+        <div class="row">
+            <div class="col-sm-8">
+            {% include 'helpdesk/include/stats.html' %}
+            </div>
+            <div class="col-sm-4">
+                <div class="alert alert-warning">
+                    <p>{% trans "Welcome to your Helpdesk Dashboard! From here you can quickly see tickets submitted by you, tickets you are working on, and those tickets that have no owner." %}</p>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
 {% if all_tickets_reported_by_current_user %}
 {% trans "All Tickets submitted by you" as ticket_list_caption %}
@@ -40,5 +43,6 @@
 {% trans "utcr_page" as page_var %}
 {% include 'helpdesk/include/tickets.html' with ticket_list=user_tickets_closed_resolved ticket_list_empty_message="" page_var=page_var %}
 {% endif %}
-
+    </div>
+</section>
 {% endblock %}

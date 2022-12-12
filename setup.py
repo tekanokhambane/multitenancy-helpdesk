@@ -1,4 +1,4 @@
-"""django-helpdesk setup"""
+"""multitenancy-helpdesk setup"""
 from distutils.util import convert_path
 from fnmatch import fnmatchcase
 import os
@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 import sys
 
 
-version = '0.5.0a1'
+version = '0.1.0b1'
 
 
 # Provided as an attribute, so you can append to these instead
@@ -130,7 +130,7 @@ def get_long_description():
 
 
 setup(
-    name="django-helpdesk",
+    name="multitenancy-helpdesk",
     version=version,
     description="Django-powered ticket tracker for your helpdesk",
     long_description=get_long_description(),
@@ -156,19 +156,20 @@ setup(
     keywords=[
         "django",
         "helpdesk",
-        "django-helpdesk",
+        "multitenancy-helpdesk",
         "tickets",
+        'multitenants',
         "incidents",
         "cases",
         "bugs",
         "track",
         "support",
     ],
-    author="Ross Poulton",
-    author_email="ross@rossp.org",
-    maintainer="Garret Wassermann",
-    maintainer_email="gwasser@gmail.com",
-    url="https://github.com/django-helpdesk/django-helpdesk",
+    author="Tekano Khambane",
+    author_email="tkhambane@gmail.com",
+    maintainer="Tekano Khambane",
+    maintainer_email="tkhambane@gmail.com",
+    url="https://github.com/tekanokhambane/multitenancy-helpdesk",
     license="BSD",
     packages=find_packages(),
     package_data=find_package_data("helpdesk", only_in_packages=False),

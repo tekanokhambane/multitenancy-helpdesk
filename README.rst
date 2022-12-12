@@ -1,10 +1,10 @@
-django-helpdesk - A Django powered ticket tracker for small businesses.
-=======================================================================
+multitenancy-helpdesk - A Django powered ticket tracker for django-multitenancy.
+=========================================================================
 
-[![Build Status](https://dev.azure.com/django-helpdesk/django-helpdesk/_apis/build/status/django-helpdesk.django-helpdesk?branchName=master)](https://dev.azure.com/django-helpdesk/django-helpdesk/_build/latest?definitionId=1&branchName=master)
+.. [![Build Status](https://dev.azure.com/django-helpdesk/django-helpdesk/_apis/build/status/django-helpdesk.django-helpdesk?branchName=master)](https://dev.azure.com/django-helpdesk/django-helpdesk/_build/latest?definitionId=1&branchName=master)
 
-.. image:: https://codecov.io/gh/django-helpdesk/django-helpdesk/branch/develop/graph/badge.svg
-  :target: https://codecov.io/gh/django-helpdesk/django-helpdesk
+.. .. image:: https://codecov.io/gh/django-helpdesk/django-helpdesk/branch/develop/graph/badge.svg
+..   :target: https://codecov.io/gh/django-helpdesk/django-helpdesk
 
 Copyright 2009-2022 Ross Poulton and django-helpdesk contributors. All Rights Reserved.
 See LICENSE for details.

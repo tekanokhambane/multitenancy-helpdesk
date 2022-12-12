@@ -10,7 +10,7 @@
           </a>
         </li>
         <li class="nav-item{% if 'tickets' in request.path and 'submit' not in request.path %} active{% endif %}">
-          <a class="nav-link" href="{% url 'helpdesk:list' %}">
+          <a class="nav-link" href="{% url 'helpdesk:list'  %}">
             <i class="fas fa-fw fa-tasks"></i>
             <span>{% trans "All Tickets" %}</span>
           </a>

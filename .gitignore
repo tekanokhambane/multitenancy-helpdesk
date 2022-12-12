@@ -1,7 +1,9 @@
 *.pyc
 .eggs/
+env/
 /dist/
-django_helpdesk.egg-info
+build/
+multitenancy_helpdesk.egg-info
 demo/*.egg-info
 demo/demodesk/*.sqlite3
 docs/html/*
