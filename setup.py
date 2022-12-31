@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 import sys
 
 
-version = '0.1.0b4'
+version = '0.1.0b6'
 
 
 # Provided as an attribute, so you can append to these instead
@@ -133,7 +133,7 @@ def get_long_description():
 setup(
     name="multitenancy-helpdesk",
     version=version,
-    description="Django-powered ticket tracker for your helpdesk",
+    description="A ticket tracker for django-multitenancy helpdesk",
     long_description=get_long_description(),
     classifiers=[
         "Development Status :: 4 - Beta",
