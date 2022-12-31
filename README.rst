@@ -6,47 +6,19 @@ multitenancy-helpdesk - A Django powered ticket tracker for django-multitenancy.
 .. .. image:: https://codecov.io/gh/django-helpdesk/django-helpdesk/branch/develop/graph/badge.svg
 ..   :target: https://codecov.io/gh/django-helpdesk/django-helpdesk
 
-Copyright 2009-2022 Ross Poulton and django-helpdesk contributors. All Rights Reserved.
-See LICENSE for details.
-
-django-helpdesk was formerly known as Jutda Helpdesk, named after the
-company which originally created it. As of January 2011 the name has been
-changed to reflect what it really is: a Django-powered ticket tracker with
-contributors reaching far beyond Jutda.
-
-Complete documentation is available in the docs/ directory,
+multitenancy-helpdesk is a fork form https://github.com/django-helpdesk/django-helpdesk , which is integrated with https://github.com/tekanokhambane/django-multitenancy for ticket management and customer support. This is not an alternative to https://github.com/django-helpdesk/django-helpdesk but a modified version to work with https://github.com/tekanokhambane/django-multitenancy.
+You can check the complete documentation of django-helpdesk in the docs/ directory,
 or online at http://django-helpdesk.readthedocs.org/.
 
 Demo Quickstart
 ---------------
 
-`django-helpdesk` includes a basic demo Django project so that you may easily
-get started with testing or developing `django-helpdesk`. The demo project
-resides in the `demo/` top-level folder.
 
-It's likely that you can start up a demo project server by running
-only the command::
-
-    make rundemo
-
-then pointing your web browser at `localhost:8080`.
-
-For more information and options, please read the `demo/README.rst` file.
-
-**NOTE REGARDING SQLITE AND SEARCHING:**
-The demo project uses `sqlite` as its database. Sqlite does not allow
-case-insensitive searches and so the search function may not work as
-effectively as it would on other database such as PostgreSQL or MySQL
-that does support case-insensitive searches.
-For more information, see this note_ in the Django documentation.
-
-When you try to do a keyword search using `sqlite`, a message will be displayed
-to alert you to this shortcoming. There is no way around it, sorry.
 
 Installation
 ------------
 
-`django-helpdesk` requires:
+`multitenancy-helpdesk` requires:
 
 * Python 3.8+
 * Django 3.2 LTS highly recommended (early adopters may test Django 4)
@@ -54,7 +26,7 @@ Installation
 You can quickly install the latest stable version of `django-helpdesk`
 app via `pip`::
 
-    pip install django-helpdesk
+    pip install multitenancy-helpdesk
 
 You may also check out the `master` branch on GitHub, and install manually::
 
